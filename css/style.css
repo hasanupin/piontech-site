@@ -153,9 +153,8 @@ h1 {
 }
 .paths {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 760px;
 }
 .path {
   display: block;
