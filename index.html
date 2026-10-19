@@ -1,72 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-theme="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Piontech Billing System — Launching Soon</title>
-<meta name="description" content="Piontech Billing System launches August 6, 2026. Stay tuned." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>" />
+<title>Piontech Solution — Internet &amp; Servis HP, Komputer, Laptop, Sepeda Listrik</title>
+<meta name="description" content="Piontech Solution: internet untuk rumah dan usaha mulai 100 ribuan per bulan, serta servis HP, komputer, laptop, dan sepeda listrik berbagai merek." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<script>
+  // Default gelap, sama dengan Billing System; pilihan pengunjung diingat.
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="bg-glow"></div>
+  <a class="skip" href="#main">Langsung ke konten</a>
 
-  <main class="wrap">
-    <header class="brand">
-      <span class="brand-mark">Piontech</span>
-      <span class="brand-sub">Billing System</span>
-      <a class="billing-link" href="https://billing.piontechsolution.com/admin">Access Billing System →</a>
-    </header>
-
-    <section class="hero">
-      <p class="eyebrow">Launching</p>
-      <h1>Something new is<br class="br-mobile" /> almost ready.</h1>
-      <p class="lede">
-        We're putting the finishing touches on Piontech Billing System.
-        Mark your calendar — we go live on <strong>August 6, 2026</strong>.
-      </p>
-    </section>
-
-    <section class="countdown" aria-live="polite">
-      <div class="unit">
-        <span class="value" id="days">00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="unit">
-        <span class="value" id="hours">00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="unit">
-        <span class="value" id="minutes">00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="unit">
-        <span class="value" id="seconds">00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </section>
-
-    <p class="target-note" id="targetNote"></p>
-
-    <section class="notify" id="notifySection">
-      <form id="notifyForm" autocomplete="off">
-        <label for="email" class="sr-only">Email address</label>
-        <input type="email" id="email" name="email" placeholder="you@company.com" required />
-        <button type="submit">Notify me</button>
-      </form>
-      <p class="notify-msg" id="notifyMsg" role="status"></p>
-    </section>
-
-    <div class="launched" id="launchedBanner" hidden>
-      <p>🎉 Piontech Billing System is live!</p>
-      <a href="#" id="launchedCta">Enter the app</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#" aria-label="Piontech Solution, ke atas">
+        <svg class="brand-glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="5" cy="19" r="2.5" fill="currentColor" />
+          <path d="M11.5 19a6.5 6.5 0 0 0-6.5-6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+          <path d="M17 19A12 12 0 0 0 5 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".7" />
+          <path d="M22.5 19A17.5 17.5 0 0 0 5 1.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".4" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-word">PIONTECH</span>
+          <span class="brand-sub">SOLUTION</span>
+        </span>
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="#internet">Internet</a>
+        <a href="#servis">Servis</a>
+        <a href="#kontak">Kontak</a>
+        <button class="theme-btn" type="button" id="themeBtn" aria-label="Ganti ke tema terang">Terang</button>
+      </nav>
     </div>
+  </header>
 
-    <footer class="foot">
-      <p>&copy; <span id="year"></span> Piontech. All rights reserved.</p>
-    </footer>
+  <main id="main">
+    <section class="hero wrap">
+      <h1>Internet untuk rumah dan usaha. Servis untuk HP, komputer, laptop, dan sepeda listrik.</h1>
+      <p class="lede">
+        Piontech Solution memasang jaringan internet di Turen, Kepanjen, dan sekitarnya,
+        dan menerima servis perangkat di toko kami. Urusan koneksi, gadget, sampai sepeda listrik, cukup ke satu tempat.
+      </p>
+
+      <div class="paths">
+        <a class="path" href="#internet">
+          <span class="path-title">Pasang internet</span>
+          <span class="path-desc">Mulai 100 ribuan per bulan. Cek dulu jangkauan di alamat Anda.</span>
+        </a>
+        <a class="path" href="#servis">
+          <span class="path-title">Servis perangkat</span>
+          <span class="path-desc">HP, komputer, laptop, dan sepeda listrik berbagai merek.</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="internet" class="block wrap">
+      <div class="internet">
+        <div>
+          <h2>Internet Piontech Solution</h2>
+          <p class="price">
+            <span class="price-label">Harga mulai</span>
+            <span class="price-value">Rp100<span class="price-unit"> ribuan</span></span>
+            <span class="price-label">per bulan</span>
+          </p>
+          <p class="muted">Ada pilihan untuk rumah dan usaha. Detail kecepatan dan harga paket kami kirim lewat WhatsApp setelah jangkauan di alamat Anda dicek.</p>
+        </div>
+
+        <div class="flow">
+          <h3>Cara berlangganan</h3>
+          <ol>
+            <li><strong>Kirim alamat lewat WhatsApp.</strong> Kami cek apakah lokasi Anda sudah masuk jangkauan.</li>
+            <li><strong>Survei lokasi.</strong> Teknisi datang menentukan jalur kabel dan posisi perangkat.</li>
+            <li><strong>Pemasangan &amp; aktivasi.</strong> Internet langsung bisa dipakai setelah terpasang.</li>
+          </ol>
+          <a class="btn" data-wa="Halo Piontech Solution, saya mau cek jangkauan internet di alamat saya:" href="#kontak">Cek jangkauan via WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servis" class="block block-band">
+      <div class="wrap">
+        <div class="block-head">
+          <h2>Servis HP, Komputer, Laptop &amp; Sepeda Listrik</h2>
+          <p class="muted">Bawa perangkat ke toko atau tanya dulu lewat WhatsApp. Kami cek kerusakannya dan sampaikan perkiraan biaya sebelum mulai dikerjakan.</p>
+        </div>
+
+        <div class="devices">
+          <div>
+            <h3>HP</h3>
+            <ul>
+              <li>Ganti layar / LCD</li>
+              <li>Ganti baterai</li>
+              <li>Port charger &amp; tombol</li>
+              <li>Mati total, bootloop</li>
+              <li>Flash &amp; install ulang software</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Komputer</h3>
+            <ul>
+              <li>Rakit &amp; upgrade PC</li>
+              <li>Install ulang Windows</li>
+              <li>Bersihkan virus &amp; malware</li>
+              <li>Mati total, layar tidak tampil</li>
+              <li>Setting jaringan &amp; printer</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Laptop</h3>
+            <ul>
+              <li>Ganti keyboard &amp; layar</li>
+              <li>Upgrade SSD &amp; RAM</li>
+              <li>Overheat, bersihkan kipas</li>
+              <li>Engsel patah</li>
+              <li>Install ulang &amp; backup data</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ebike">
+          <div>
+            <h3>Sepeda Listrik</h3>
+            <p class="muted">Berbagai merek. Sebutkan merek dan tipe saat menghubungi kami.</p>
+          </div>
+          <ul>
+            <li>Baterai cepat habis / tidak mau dicas</li>
+            <li>Charger rusak</li>
+            <li>Controller &amp; dinamo</li>
+            <li>Mati total, tidak mau jalan</li>
+            <li>Lampu, klakson &amp; panel speedometer</li>
+            <li>Kabel &amp; soket kelistrikan</li>
+          </ul>
+        </div>
+
+        <a class="btn" data-wa="Halo Piontech Solution, saya mau tanya servis:" href="#kontak">Tanya servis via WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="kontak" class="block wrap">
+      <div class="block-head">
+        <h2>Kunjungi atau hubungi kami</h2>
+      </div>
+      <dl class="contact">
+        <div><dt>WhatsApp</dt><dd><a data-wa="Halo Piontech Solution," href="https://wa.me/6289694412717">0896-9441-2717</a></dd></div>
+        <div><dt>Alamat toko</dt><dd>Jl. Semangka RT.02 RW.01, Desa Talangsuko, Turen</dd></div>
+      </dl>
+    </section>
   </main>
 
-  <script src="js/countdown.js"></script>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p>&copy; <span id="year"></span> Piontech Solution</p>
+      <a href="https://billing.piontechsolution.com/admin">Login Billing System</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
